@@ -158,5 +158,9 @@ namespace EFGetStarted.AspNetCore.NewDb.Controllers
         {
             return _context.Blogs.Any(e => e.BlogId == id);
         }
+
+        public static bool IsItNew(BloggingContext context, Blog blog) 
+        => context.Blogs.Find(blog.BlogId) == null;
+
     }
 }
