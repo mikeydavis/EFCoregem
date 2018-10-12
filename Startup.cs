@@ -35,7 +35,7 @@ namespace EFGetStarted.AspNetCore.NewDb
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            var connection = "Server=217.61.22.122,1433;User Id=mikie;Password=Aneeka97;Database=TAG";
+            var connection = "Server=http://whm.midax.co.uk,1433;User Id=mikie;Password=Aneeka97;Database=TAG";
             services.AddDbContext<BloggingContext>(options => options.UseSqlServer(connection));
         }
 
