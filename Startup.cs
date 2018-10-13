@@ -33,9 +33,8 @@ namespace EFGetStarted.AspNetCore.NewDb
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            var connection = "Server=http://whm.midax.co.uk,1433;User Id=mikie;Password=Aneeka97;Database=TAG";
+            var connection = Configuration.GetConnectionString("SqlContext");
             services.AddDbContext<BloggingContext>(options => options.UseSqlServer(connection));
         }
 
