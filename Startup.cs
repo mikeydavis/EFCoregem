@@ -34,8 +34,8 @@ namespace EFGetStarted.AspNetCore.NewDb
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            var connection = Configuration.GetConnectionString("SqlContext");
-            services.AddDbContext<BloggingContext>(options => options.UseSqlServer("Server=http://217.61.22.122,1433;User Id=mikie;Password=Aneeka97;Database=TAG"));
+            string Connection = Configuration.GetConnectionString("SqlContext");
+            services.AddDbContext<BloggingContext>(options => options.UseSqlServer(Connection));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
