@@ -35,3 +35,4 @@
 /Users/mikedavis/development/EFGetStarted.AspNetCore.NewDb/obj/Debug/netcoreapp2.1/EFGetStarted.AspNetCore.NewDb.dll
 /Users/mikedavis/development/EFGetStarted.AspNetCore.NewDb/obj/Debug/netcoreapp2.1/EFGetStarted.AspNetCore.NewDb.pdb
 /Users/mikedavis/development/EFGetStarted.AspNetCore.NewDb/obj/Debug/netcoreapp2.1/EFGetStarted.AspNetCore.NewDb.csproj.CopyComplete
+/Users/mikedavis/development/EFGetStarted.AspNetCore.NewDb/obj/Debug/netcoreapp2.1/Razor/Views/Home/React.g.cshtml.cs

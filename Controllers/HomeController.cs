@@ -10,6 +10,10 @@ namespace EFGetStarted.AspNetCore.NewDb.Controllers
 {
     public class HomeController : Controller
     {
+        public IActionResult React()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();

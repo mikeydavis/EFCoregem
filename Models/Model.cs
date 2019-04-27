@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 
 namespace EFGetStarted.AspNetCore.NewDb.Models
@@ -26,11 +27,18 @@ namespace EFGetStarted.AspNetCore.NewDb.Models
         public List<Post> Posts { get; set; }
     }
 
+    public class Page
+    {
+        public int PageId {get; set;}
+        
+    }
+
     public class Post
     {
         public int PostId { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
+        public DateTime PostDate { get;set; }
 
         public int BlogId { get; set; }
         public Blog Blog { get; set; }
